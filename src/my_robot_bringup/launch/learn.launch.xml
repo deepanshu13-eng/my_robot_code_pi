@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="intro_cpp_pkg" exec="sensor_node" name="my_sensor_node" namespace="cpp">
+        <remap from="robot_news" to="my_robot_news"/>
+    </node>
+    <node pkg="my_test" exec="py_sensor" name="lets_test" namespace="py" >
+        <param from="$(find-pkg-share my_robot_bringup)/config/sensor_node_params.yaml"/>
+        <!-- <param name="string" value="Hiho" />
+        <param name="timer_period" value="5.0" /> -->
+    </node>
+</launch>

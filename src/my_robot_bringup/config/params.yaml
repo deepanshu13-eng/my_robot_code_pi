@@ -1,0 +1,13 @@
+py_test:
+    ros__parameters:
+        bool_value: True
+        int_number: 6
+        float_number: 6.7
+        str_text: "None"
+        bool_array: [True, False, True]
+        int_array: [1,3, 6]
+        float_array: [5.8, 9.0, 9.7]
+        str_array: ["yo", "no", "lo"]
+        bytes_array: [0x01, 0xF1]
+        nested_param:
+            another_int: None

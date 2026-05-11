@@ -1,0 +1,5 @@
+/lets_test:
+  ros__parameters:
+    string: "Hello"
+    timer_period: "2.0"
+    
